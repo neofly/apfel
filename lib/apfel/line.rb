@@ -68,5 +68,9 @@ module Apfel
     def is_comment?
      whole_comment? || open_comment? || close_comment? || in_comment
     end
+    
+    def to_s
+      @content
+    end
   end
 end
